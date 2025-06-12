@@ -247,13 +247,14 @@ color: #434455;
 .section-hero {
     background-color: #F4F4FD;
     /* padding: 120px 0; */
-    padding: 96px;
+    padding: 96px 0;
 }
 .hero-item {
 background-color: #fff;
 /* width: calc((100% - 72px) / 4); */
 max-width: 264px;
 width: 100%;
+
 
 border-radius: 0px 0px 4px 4px;
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -300,7 +301,7 @@ background-color: #404bbf;
 }
 .hero-list {
     display: flex;
-    gap: 24px;
+    /* gap: 24px; */
 align-items: center;
 justify-content: center;
 flex-wrap: wrap;
@@ -328,7 +329,8 @@ color: #434455;
 }
 .section-portfolio {
     background-color: #FFFFFF;
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 96px 0;
 }
 .portfolio-title {
 font-weight: 700;
@@ -343,7 +345,7 @@ margin-bottom: 72px;
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
+    /* column-gap: 24px; */
     row-gap: 48px;
 }
 .portfilio-div {
@@ -372,7 +374,9 @@ margin-bottom: 72px;
 }
 .portfilio-item {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 .portfolio-curent {
     position: absolute;
     top: 0;
@@ -385,9 +389,7 @@ margin-bottom: 72px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.portfilio-item:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+
 .portfilio-item:hover .portfolio-curent {
 transform: translateY(0);
 }
@@ -840,6 +842,16 @@ text-align: start;
 /* HERO */
 
 
+.hero-list {
+    column-gap: 24px;
+    row-gap: 64px;
+}
+/* portfolio */
+.portfolio-list {
+    column-gap: 24px;
+    row-gap: 72px;
+}
+
 }
 
 
@@ -919,7 +931,27 @@ padding: 118px 0;
     font-weight: 400;
 }
 /* HERO */
-
-
+.section-hero {
+    padding: 120px 0;
+}
+.hero-item {
+    width: calc((100% - 72px) / 4);
+}
+.hero-list {
+    flex-wrap: nowrap;
+    column-gap: auto;
+    row-gap: auto;
+}
+/* portfolio */
+.portfilio-item {
+    box-shadow: none;
+}
+.portfolio-list {
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.portfilio-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 }
