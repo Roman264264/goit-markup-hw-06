@@ -143,9 +143,11 @@ color: #434455; */
 }
 .section-box {
     background-color: #2E2F42;
-    padding: 188px 0;
+    /* padding: 188px 0; */
+    padding: 72px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Mobile-bg.jpg);
-max-width: 1440px;
+max-width: 320px;
+
 margin: 0 auto;
 background-repeat: no-repeat;
 background-position: center;
@@ -158,15 +160,19 @@ background-size: cover;
 }
 .box-title {
 font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
+/* font-size: 56px; */
+/* line-height: 1.07; */
 letter-spacing: 0.02em;
 text-align: center;
 color: #fff;
-max-width: 496px;
-
+/* max-width: 496px; */
+max-width: 216px;
 margin: 0 auto;
-margin-bottom: 48px;
+/* margin-bottom: 48px; */
+margin-bottom: 72px;
+font-size: 36px;
+line-height: 1.1;
+letter-spacing: 0.02em;
 }
 .box-btn {
 background: #4d5ae5;
@@ -240,11 +246,15 @@ color: #434455;
 }
 .section-hero {
     background-color: #F4F4FD;
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 96px;
 }
 .hero-item {
-background: #fff;
-width: calc((100% - 72px) / 4);
+background-color: #fff;
+/* width: calc((100% - 72px) / 4); */
+max-width: 264px;
+width: 100%;
+
 border-radius: 0px 0px 4px 4px;
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -291,6 +301,11 @@ background-color: #404bbf;
 .hero-list {
     display: flex;
     gap: 24px;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+gap: 72px;
+
 
 }
 .hero-subtitle {
@@ -302,6 +317,7 @@ text-align: center;
 color: #2e2f42;
 margin-bottom: 8px;
 }
+
 .hero-text {
 font-weight: 400;
 font-size: 16px;
@@ -791,12 +807,21 @@ span.check-icon {
 .section-box {
 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Tablet-bg.jpg);
+padding: 112px 0;
+max-width: 768px;
 
 }
 @media screen and (min-resolution: 2x) {
 .section-box {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Tablet-bg-x2.jpg);
+
 }
+}
+.box-title {
+    max-width: 496px;
+    line-height: 1.07;
+    font-size: 56px;
+    margin-bottom: 36px;
 }
 
 
@@ -811,6 +836,9 @@ text-align: start;
 .information-item {
     width: calc((100% - 24px) / 2);
 }
+
+/* HERO */
+
 
 }
 
@@ -844,7 +872,17 @@ margin-right: 76px;
 .section-box {
 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Desk-bg.jpg);
-
+max-width: 1158px;
+padding: 118px 0;
+}
+@media screen and (min-resolution: 2x) {
+    .section-box {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/desk-bg-2x.jpg);
+        
+    }
+    }
+.box-title {
+    margin-bottom: 48px;
 }
 
 
@@ -880,4 +918,8 @@ margin-right: 76px;
 .information-text {
     font-weight: 400;
 }
+/* HERO */
+
+
+
 }
